@@ -5,6 +5,12 @@
   <title>Product Filter And Search</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+  const user = JSON.parse(localStorage.getItem("loggedUser"));
+  if (!user) {
+    window.location.replace("login.html");
+  }
+</script>
 </head>
 <body>
   <div class="navbar">
