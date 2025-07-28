@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-document.getElementById("loginBtn").addEventListener("click", async () => {
+/*document.getElementById("loginBtn").addEventListener("click", async () => {
       try {
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
@@ -29,4 +29,20 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
         alert("Login failed: " + error.message);
         console.error(error);
       }
+});
+*/
+document.getElementById("loginBtn").addEventListener("click", async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+    localStorage.removeItem("loggedUser");
+    localStorage.setItem("loggedUser", JSON.stringify({
+      name: user.displayName,
+      email: user.email
+    }));
+    window.location.href = "index.html";
+  } catch (error) {
+    alert("Login failed: " + error.message);
+    console.error(error);
+  }
 });
