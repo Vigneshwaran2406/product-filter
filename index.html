@@ -89,6 +89,12 @@
 
     <div id="products"></div>
   </div>
+  
+  <script>
+  window.addEventListener("beforeunload", () => {
+    localStorage.removeItem("loggedUser");
+  });
+</script>
 
   <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
