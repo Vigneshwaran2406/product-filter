@@ -103,58 +103,6 @@
       transform: scale(1.05);
     }
 
-   @media screen and (max-width: 480px) {
-
-   body {
-  background-image: url('assets\\bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    margin: 0;
-}
-
-    .login-box {
-      background: rgba(0, 0, 0, 0.1);
-      padding: 3em;
-      border-radius: 35px;
-      text-align: center;
-      backdrop-filter: blur(8px);
-      border: 1px solid black;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-family: sans-serif;
-      margin-top: auto;
-      padding: 0 0 20px 0;
-    }
-    .gradient-text {
-        background: linear-gradient(90deg, #ec14af, #6e0dd0); /* Your gradient colors */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
-        font-size: 1em;
-}
-
-    button {
-      padding: 10px 25px;
-      border: none;
-      border-radius: 25px;
-      background-image: linear-gradient(rgb(234, 42, 45),rgb(223, 63, 180));
-      border-radius: 20px;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1em;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-    }
-
   @media screen and (max-width: 480px) {
     body {
     background-image: url('assets\\bg.jpg');
